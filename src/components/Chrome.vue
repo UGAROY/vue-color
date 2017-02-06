@@ -151,10 +151,12 @@ export default {
     hideHighlight () {
       this.highlight = false
     },
-    onCancel () {
+    onCancel (evt) {
+      evt.preventDefault()
       this.$emit('cancel')
     },
-    onOk () {
+    onOk (evt) {
+      evt.preventDefault()
       this.$emit('ok')
     }
   }
