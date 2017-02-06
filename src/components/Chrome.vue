@@ -70,6 +70,10 @@
         </div>
         <!-- btn -->
       </div>      
+      <div class="vue-color__chrome__chrome-actionbar">
+        <button @click="onCancel">取消</button>
+        <button @click="onOk">确定</button>
+      </div>
     </div>
   </div>
 </template>
@@ -146,6 +150,12 @@ export default {
     },
     hideHighlight () {
       this.highlight = false
+    },
+    onCancel () {
+      this.$emit('cancel')
+    },
+    onOk () {
+      this.$emit('ok')
     }
   }
 }
@@ -249,5 +259,15 @@ export default {
     text-align center
     display block
     margin-top 12px
-
+.vue-color__chrome__chrome-actionbar
+  text-align right
+  button
+    -webkit-appearance none
+    padding 4px
+    font-size 12px
+    border 1px solid #bfcbd9
+    border-radius 4px
+    background #FFF
+    outline none
+    cursor pointer
 </style>

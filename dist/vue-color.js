@@ -164,9 +164,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-3", __vue_options__)
+	    hotAPI.createRecord("data-v-1", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-3", __vue_options__)
+	    hotAPI.reload("data-v-1", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Compact.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -190,8 +190,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-3!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Compact.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-3!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Compact.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-1!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Compact.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-1!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Compact.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -2026,31 +2026,31 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){with(this) {
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "vue-color__editable-input"
 	  }, [_c('input', {
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (val),
+	      value: (_vm.val),
 	      expression: "val"
 	    }],
 	    staticClass: "vue-color__editable-input__input",
 	    domProps: {
-	      "value": _s(val)
+	      "value": _vm._s(_vm.val)
 	    },
 	    on: {
-	      "keydown": handleKeyDown,
+	      "keydown": _vm.handleKeyDown,
 	      "input": [function($event) {
-	        if ($event.target.composing) return;
-	        val = $event.target.value
-	      }, update]
+	        if ($event.target.composing) { return; }
+	        _vm.val = $event.target.value
+	      }, _vm.update]
 	    }
-	  }), _v(" "), _c('span', {
+	  }), _vm._v(" "), _c('span', {
 	    staticClass: "vue-color__editable-input__label"
-	  }, [_v(_s(label))])])
-	}},staticRenderFns: []}
+	  }, [_vm._v(_vm._s(_vm.label))])])
+	},staticRenderFns: []}
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -2062,12 +2062,12 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){with(this) {
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "vue-color__compact"
 	  }, [_c('ul', {
 	    staticClass: "vue-color__compact__colors"
-	  }, _l((defaultColors), function(c) {
+	  }, _vm._l((_vm.defaultColors), function(c) {
 	    return _c('li', {
 	      staticClass: "vue-color__compact__color-item",
 	      class: {
@@ -2078,24 +2078,24 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }),
 	      on: {
 	        "click": function($event) {
-	          handlerClick(c)
+	          _vm.handlerClick(c)
 	        }
 	      }
 	    }, [_c('div', {
 	      directives: [{
 	        name: "show",
 	        rawName: "v-show",
-	        value: (c === pick),
+	        value: (c === _vm.pick),
 	        expression: "c === pick"
 	      }],
 	      staticClass: "vue-color__compact__dot"
 	    })])
-	  })), _v(" ")])
-	}},staticRenderFns: []}
+	  }))])
+	},staticRenderFns: []}
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-3", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-1", module.exports)
 	  }
 	}
 
@@ -2134,9 +2134,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-2", __vue_options__)
+	    hotAPI.createRecord("data-v-4", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-2", __vue_options__)
+	    hotAPI.reload("data-v-4", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Material.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -2160,8 +2160,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-2!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Material.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-2!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Material.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-4!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Material.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-4!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Material.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -2237,33 +2237,33 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){with(this) {
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "vue-color__material"
 	  }, [_c('ed-in', {
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors.hex),
+	      value: (_vm.colors.hex),
 	      expression: "colors.hex"
 	    }],
 	    staticClass: "vue-color__material__hex",
 	    style: ({
-	      borderColor: colors.hex
+	      borderColor: _vm.colors.hex
 	    }),
 	    attrs: {
 	      "label": "hex"
 	    },
 	    domProps: {
-	      "value": (colors.hex)
+	      "value": (_vm.colors.hex)
 	    },
 	    on: {
-	      "on-change": onChange,
+	      "on-change": _vm.onChange,
 	      "input": function($event) {
-	        colors.hex = $event
+	        _vm.colors.hex = $event
 	      }
 	    }
-	  }), _v(" "), _c('div', {
+	  }), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__material__split"
 	  }, [_c('div', {
 	    staticClass: "vue-color__material__third"
@@ -2271,69 +2271,69 @@ return /******/ (function(modules) { // webpackBootstrap
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors.rgba.r),
+	      value: (_vm.colors.rgba.r),
 	      expression: "colors.rgba.r"
 	    }],
 	    attrs: {
 	      "label": "r"
 	    },
 	    domProps: {
-	      "value": (colors.rgba.r)
+	      "value": (_vm.colors.rgba.r)
 	    },
 	    on: {
-	      "on-change": onChange,
+	      "on-change": _vm.onChange,
 	      "input": function($event) {
-	        colors.rgba.r = $event
+	        _vm.colors.rgba.r = $event
 	      }
 	    }
-	  })]), _v(" "), _c('div', {
+	  })], 1), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__material__third"
 	  }, [_c('ed-in', {
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors.rgba.g),
+	      value: (_vm.colors.rgba.g),
 	      expression: "colors.rgba.g"
 	    }],
 	    attrs: {
 	      "label": "g"
 	    },
 	    domProps: {
-	      "value": (colors.rgba.g)
+	      "value": (_vm.colors.rgba.g)
 	    },
 	    on: {
-	      "on-change": onChange,
+	      "on-change": _vm.onChange,
 	      "input": function($event) {
-	        colors.rgba.g = $event
+	        _vm.colors.rgba.g = $event
 	      }
 	    }
-	  })]), _v(" "), _c('div', {
+	  })], 1), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__material__third"
 	  }, [_c('ed-in', {
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors.rgba.b),
+	      value: (_vm.colors.rgba.b),
 	      expression: "colors.rgba.b"
 	    }],
 	    attrs: {
 	      "label": "b"
 	    },
 	    domProps: {
-	      "value": (colors.rgba.b)
+	      "value": (_vm.colors.rgba.b)
 	    },
 	    on: {
-	      "on-change": onChange,
+	      "on-change": _vm.onChange,
 	      "input": function($event) {
-	        colors.rgba.b = $event
+	        _vm.colors.rgba.b = $event
 	      }
 	    }
-	  })])])])
-	}},staticRenderFns: []}
+	  })], 1)])], 1)
+	},staticRenderFns: []}
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-4", module.exports)
 	  }
 	}
 
@@ -2372,9 +2372,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-4", __vue_options__)
+	    hotAPI.createRecord("data-v-2", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-4", __vue_options__)
+	    hotAPI.reload("data-v-2", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Slider.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -2398,8 +2398,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-4!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Slider.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-4!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Slider.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-2!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Slider.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-2!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Slider.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -2680,27 +2680,27 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){with(this) {
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
-	    class: ['vue-color__c-hue', directionClass]
+	    class: ['vue-color__c-hue', _vm.directionClass]
 	  }, [_c('div', {
 	    ref: "container",
 	    staticClass: "vue-color__c-hue__container",
 	    on: {
-	      "mousedown": handleMouseDown,
-	      "touchmove": handleChange,
-	      "touchstart": handleChange
+	      "mousedown": _vm.handleMouseDown,
+	      "touchmove": _vm.handleChange,
+	      "touchstart": _vm.handleChange
 	    }
 	  }, [_c('div', {
 	    staticClass: "vue-color__c-hue__pointer",
 	    style: ({
-	      top: pointerTop,
-	      left: pointerLeft
+	      top: _vm.pointerTop,
+	      left: _vm.pointerLeft
 	    })
 	  }, [_c('div', {
 	    staticClass: "vue-color__c-hue__picker"
 	  })])])])
-	}},staticRenderFns: []}
+	},staticRenderFns: []}
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -2712,7 +2712,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){with(this) {
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "vue-color__slider"
 	  }, [_c('div', {
@@ -2721,21 +2721,21 @@ return /******/ (function(modules) { // webpackBootstrap
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors),
+	      value: (_vm.colors),
 	      expression: "colors"
 	    }],
 	    domProps: {
-	      "value": (colors)
+	      "value": (_vm.colors)
 	    },
 	    on: {
-	      "on-change": hueChange,
+	      "on-change": _vm.hueChange,
 	      "input": function($event) {
-	        colors = $event
+	        _vm.colors = $event
 	      }
 	    }
-	  })]), _v(" "), _c('div', {
+	  })], 1), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__slider__swatches"
-	  }, _l((swatches), function(offset, index) {
+	  }, _vm._l((_vm.swatches), function(offset, index) {
 	    return _c('div', {
 	      staticClass: "vue-color__slider__swatch",
 	      attrs: {
@@ -2743,24 +2743,24 @@ return /******/ (function(modules) { // webpackBootstrap
 	      },
 	      on: {
 	        "click": function($event) {
-	          handleSwClick(index, offset)
+	          _vm.handleSwClick(index, offset)
 	        }
 	      }
 	    }, [_c('div', {
 	      staticClass: "vue-color__slider__swatch-picker",
 	      class: {
-	        'vue-color__slider__swatch-picker--active': offset == activeOffset
+	        'vue-color__slider__swatch-picker--active': offset == _vm.activeOffset
 	      },
 	      style: ({
-	        background: 'hsl(' + colors.hsl.h + ', 50%, ' + (offset * 100) + '%)'
+	        background: 'hsl(' + _vm.colors.hsl.h + ', 50%, ' + (offset * 100) + '%)'
 	      })
 	    })])
 	  }))])
-	}},staticRenderFns: []}
+	},staticRenderFns: []}
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-4", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2", module.exports)
 	  }
 	}
 
@@ -2799,9 +2799,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-1", __vue_options__)
+	    hotAPI.createRecord("data-v-6", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-1", __vue_options__)
+	    hotAPI.reload("data-v-6", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Swatches.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -2825,8 +2825,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-1!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Swatches.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-1!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Swatches.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-6!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Swatches.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-6!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Swatches.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -2929,18 +2929,18 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){with(this) {
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "vue-color__swatches",
 	    attrs: {
-	      "data-pick": pick
+	      "data-pick": _vm.pick
 	    }
 	  }, [_c('div', {
 	    staticClass: "vue-color__swatches__box"
-	  }, _l((defaultColors), function(group) {
+	  }, _vm._l((_vm.defaultColors), function(group) {
 	    return _c('div', {
 	      staticClass: "vue-color__swatches__color-group"
-	    }, _l((group), function(c) {
+	    }, _vm._l((group), function(c) {
 	      return _c('div', {
 	        staticClass: "vue-color__swatches__color-it",
 	        style: ({
@@ -2951,14 +2951,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 	        on: {
 	          "click": function($event) {
-	            handlerClick(c)
+	            _vm.handlerClick(c)
 	          }
 	        }
 	      }, [_c('div', {
 	        directives: [{
 	          name: "show",
 	          rawName: "v-show",
-	          value: (c == pick),
+	          value: (c == _vm.pick),
 	          expression: "c == pick"
 	        }],
 	        staticClass: "vue-color__swatches__pick"
@@ -2977,11 +2977,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	      })])])])
 	    }))
 	  }))])
-	}},staticRenderFns: []}
+	},staticRenderFns: []}
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-1", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-6", module.exports)
 	  }
 	}
 
@@ -3020,9 +3020,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-6", __vue_options__)
+	    hotAPI.createRecord("data-v-3", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-6", __vue_options__)
+	    hotAPI.reload("data-v-3", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Photoshop.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -3046,8 +3046,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-6!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Photoshop.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-6!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Photoshop.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-3!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Photoshop.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-3!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Photoshop.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -3780,30 +3780,30 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){with(this) {
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    ref: "container",
 	    staticClass: "vue-color__saturation",
 	    style: ({
-	      background: bgColor
+	      background: _vm.bgColor
 	    }),
 	    on: {
-	      "mousedown": handleMouseDown
+	      "mousedown": _vm.handleMouseDown
 	    }
 	  }, [_c('div', {
 	    staticClass: "vue-color__saturation--white"
-	  }), _v(" "), _c('div', {
+	  }), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__saturation--black"
-	  }), _v(" "), _c('div', {
+	  }), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__saturation--pointer",
 	    style: ({
-	      top: pointerTop,
-	      left: pointerLeft
+	      top: _vm.pointerTop,
+	      left: _vm.pointerLeft
 	    })
 	  }, [_c('div', {
 	    staticClass: "vue-color__saturation--circle"
 	  })])])
-	}},staticRenderFns: []}
+	},staticRenderFns: []}
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -4130,14 +4130,14 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){with(this) {
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "vue-color__c-checkerboard",
 	    style: ({
-	      background: bgStyle
+	      background: _vm.bgStyle
 	    })
 	  })
-	}},staticRenderFns: []}
+	},staticRenderFns: []}
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -4149,33 +4149,33 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){with(this) {
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "vue-color__c-alpha"
 	  }, [_c('div', {
 	    staticClass: "vue-color__c-alpha__checkboard-wrap"
-	  }, [_c('checkboard')]), _v(" "), _c('div', {
+	  }, [_c('checkboard')], 1), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__c-alpha__gradient",
 	    style: ({
-	      background: gradientColor
+	      background: _vm.gradientColor
 	    })
-	  }), _v(" "), _c('div', {
+	  }), _vm._v(" "), _c('div', {
 	    ref: "container",
 	    staticClass: "vue-color__c-alpha__container",
 	    on: {
-	      "mousedown": handleMouseDown,
-	      "touchmove": handleChange,
-	      "touchstart": handleChange
+	      "mousedown": _vm.handleMouseDown,
+	      "touchmove": _vm.handleChange,
+	      "touchstart": _vm.handleChange
 	    }
 	  }, [_c('div', {
 	    staticClass: "vue-color__c-alpha__pointer",
 	    style: ({
-	      left: colors.a * 100 + '%'
+	      left: _vm.colors.a * 100 + '%'
 	    })
 	  }, [_c('div', {
 	    staticClass: "vue-color__c-alpha__picker"
 	  })])])])
-	}},staticRenderFns: []}
+	},staticRenderFns: []}
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -4187,12 +4187,12 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){with(this) {
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "vue-colors__photoshop"
 	  }, [_c('div', {
 	    staticClass: "vue-colors__photoshop__head"
-	  }, [_v(_s(head))]), _v(" "), _c('div', {
+	  }, [_vm._v(_vm._s(_vm.head))]), _vm._v(" "), _c('div', {
 	    staticClass: "vue-colors__photoshop__body"
 	  }, [_c('div', {
 	    staticClass: "vue-colors__photoshop__saturation-wrap"
@@ -4200,37 +4200,37 @@ return /******/ (function(modules) { // webpackBootstrap
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors),
+	      value: (_vm.colors),
 	      expression: "colors"
 	    }],
 	    domProps: {
-	      "value": (colors)
+	      "value": (_vm.colors)
 	    },
 	    on: {
-	      "on-change": childChange,
+	      "on-change": _vm.childChange,
 	      "input": function($event) {
-	        colors = $event
+	        _vm.colors = $event
 	      }
 	    }
-	  })]), _v(" "), _c('div', {
+	  })], 1), _vm._v(" "), _c('div', {
 	    staticClass: "vue-colors__photoshop__hue-wrap"
 	  }, [_c('hue', {
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors),
+	      value: (_vm.colors),
 	      expression: "colors"
 	    }],
 	    attrs: {
 	      "direction": "vertical"
 	    },
 	    domProps: {
-	      "value": (colors)
+	      "value": (_vm.colors)
 	    },
 	    on: {
-	      "on-change": childChange,
+	      "on-change": _vm.childChange,
 	      "input": function($event) {
-	        colors = $event
+	        _vm.colors = $event
 	      }
 	    }
 	  }, [_c('div', {
@@ -4239,163 +4239,163 @@ return /******/ (function(modules) { // webpackBootstrap
 	    staticClass: "vue-colors__photoshop__hue-pointer--left"
 	  }), _c('i', {
 	    staticClass: "vue-colors__photoshop__hue-pointer--right"
-	  })])])]), _v(" "), _c('div', {
+	  })])])], 1), _vm._v(" "), _c('div', {
 	    staticClass: "vue-colors__photoshop__controls"
 	  }, [_c('div', {
 	    staticClass: "vue-colors__photoshop__previews"
 	  }, [_c('div', {
 	    staticClass: "vue-colors__photoshop__previews__label"
-	  }, [_v("new")]), _v(" "), _c('div', {
+	  }, [_vm._v("new")]), _vm._v(" "), _c('div', {
 	    staticClass: "vue-colors__photoshop__previews__swatches"
 	  }, [_c('div', {
 	    staticClass: "vue-colors__photoshop__previews__pr-color",
 	    style: ({
-	      background: colors.hex
+	      background: _vm.colors.hex
 	    })
-	  }), _v(" "), _c('div', {
+	  }), _vm._v(" "), _c('div', {
 	    staticClass: "vue-colors__photoshop__previews__pr-color",
 	    style: ({
-	      background: currentColor
+	      background: _vm.currentColor
 	    })
-	  })]), _v(" "), _c('div', {
+	  })]), _vm._v(" "), _c('div', {
 	    staticClass: "vue-colors__photoshop__previews__label"
-	  }, [_v("current")])]), _v(" "), _c('div', {
+	  }, [_vm._v("current")])]), _vm._v(" "), _c('div', {
 	    staticClass: "vue-colors__photoshop__actions"
 	  }, [_c('div', {
 	    staticClass: "vue-colors__photoshop__ac-btn",
 	    on: {
-	      "click": handleAccept
+	      "click": _vm.handleAccept
 	    }
-	  }, [_v("OK")]), _v(" "), _c('div', {
+	  }, [_vm._v("OK")]), _vm._v(" "), _c('div', {
 	    staticClass: "vue-colors__photoshop__ac-btn",
 	    on: {
-	      "click": handleCancel
+	      "click": _vm.handleCancel
 	    }
-	  }, [_v("Cancel")]), _v(" "), _c('div', {
+	  }, [_vm._v("Cancel")]), _vm._v(" "), _c('div', {
 	    staticClass: "vue-colors__photoshop__fields"
 	  }, [_c('ed-in', {
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors.hsl.h),
+	      value: (_vm.colors.hsl.h),
 	      expression: "colors.hsl.h"
 	    }],
 	    attrs: {
 	      "label": "h"
 	    },
 	    domProps: {
-	      "value": (colors.hsl.h)
+	      "value": (_vm.colors.hsl.h)
 	    },
 	    on: {
-	      "on-change": inputChange,
+	      "on-change": _vm.inputChange,
 	      "input": function($event) {
-	        colors.hsl.h = $event
+	        _vm.colors.hsl.h = $event
 	      }
 	    }
-	  }), _v(" "), _c('ed-in', {
+	  }), _vm._v(" "), _c('ed-in', {
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors.hsl.s),
+	      value: (_vm.colors.hsl.s),
 	      expression: "colors.hsl.s"
 	    }],
 	    attrs: {
 	      "label": "s"
 	    },
 	    domProps: {
-	      "value": (colors.hsl.s)
+	      "value": (_vm.colors.hsl.s)
 	    },
 	    on: {
-	      "on-change": inputChange,
+	      "on-change": _vm.inputChange,
 	      "input": function($event) {
-	        colors.hsl.s = $event
+	        _vm.colors.hsl.s = $event
 	      }
 	    }
-	  }), _v(" "), _c('ed-in', {
+	  }), _vm._v(" "), _c('ed-in', {
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors.hsl.l),
+	      value: (_vm.colors.hsl.l),
 	      expression: "colors.hsl.l"
 	    }],
 	    attrs: {
 	      "label": "v"
 	    },
 	    domProps: {
-	      "value": (colors.hsl.l)
+	      "value": (_vm.colors.hsl.l)
 	    },
 	    on: {
-	      "on-change": inputChange,
+	      "on-change": _vm.inputChange,
 	      "input": function($event) {
-	        colors.hsl.l = $event
+	        _vm.colors.hsl.l = $event
 	      }
 	    }
-	  }), _v(" "), _c('div', {
+	  }), _vm._v(" "), _c('div', {
 	    staticClass: "vue-colors__photoshop__fields__divider"
-	  }), _v(" "), _v(" "), _c('ed-in', {
+	  }), _vm._v(" "), _c('ed-in', {
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors.rgba.r),
+	      value: (_vm.colors.rgba.r),
 	      expression: "colors.rgba.r"
 	    }],
 	    attrs: {
 	      "label": "r"
 	    },
 	    domProps: {
-	      "value": (colors.rgba.r)
+	      "value": (_vm.colors.rgba.r)
 	    },
 	    on: {
-	      "on-change": inputChange,
+	      "on-change": _vm.inputChange,
 	      "input": function($event) {
-	        colors.rgba.r = $event
+	        _vm.colors.rgba.r = $event
 	      }
 	    }
-	  }), _v(" "), _c('ed-in', {
+	  }), _vm._v(" "), _c('ed-in', {
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors.rgba.g),
+	      value: (_vm.colors.rgba.g),
 	      expression: "colors.rgba.g"
 	    }],
 	    attrs: {
 	      "label": "g"
 	    },
 	    domProps: {
-	      "value": (colors.rgba.g)
+	      "value": (_vm.colors.rgba.g)
 	    },
 	    on: {
-	      "on-change": inputChange,
+	      "on-change": _vm.inputChange,
 	      "input": function($event) {
-	        colors.rgba.g = $event
+	        _vm.colors.rgba.g = $event
 	      }
 	    }
-	  }), _v(" "), _c('ed-in', {
+	  }), _vm._v(" "), _c('ed-in', {
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors.rgba.b),
+	      value: (_vm.colors.rgba.b),
 	      expression: "colors.rgba.b"
 	    }],
 	    attrs: {
 	      "label": "b"
 	    },
 	    domProps: {
-	      "value": (colors.rgba.b)
+	      "value": (_vm.colors.rgba.b)
 	    },
 	    on: {
-	      "on-change": inputChange,
+	      "on-change": _vm.inputChange,
 	      "input": function($event) {
-	        colors.rgba.b = $event
+	        _vm.colors.rgba.b = $event
 	      }
 	    }
-	  }), _v(" "), _c('div', {
+	  }), _vm._v(" "), _c('div', {
 	    staticClass: "vue-colors__photoshop__fields__divider"
-	  }), _v(" "), _v(" "), _c('ed-in', {
+	  }), _vm._v(" "), _c('ed-in', {
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors.hex),
+	      value: (_vm.colors.hex),
 	      expression: "colors.hex"
 	    }],
 	    staticClass: "vue-colors__photoshop__fields__hex",
@@ -4403,20 +4403,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	      "label": "#"
 	    },
 	    domProps: {
-	      "value": (colors.hex)
+	      "value": (_vm.colors.hex)
 	    },
 	    on: {
-	      "on-change": inputChange,
+	      "on-change": _vm.inputChange,
 	      "input": function($event) {
-	        colors.hex = $event
+	        _vm.colors.hex = $event
 	      }
 	    }
-	  })])])])])])
-	}},staticRenderFns: []}
+	  })], 1)])])])])
+	},staticRenderFns: []}
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-6", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-3", module.exports)
 	  }
 	}
 
@@ -4455,9 +4455,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-5", __vue_options__)
+	    hotAPI.createRecord("data-v-7", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-5", __vue_options__)
+	    hotAPI.reload("data-v-7", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Sketch.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -4481,8 +4481,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-5!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Sketch.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-5!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Sketch.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-7!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Sketch.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-7!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Sketch.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -4596,7 +4596,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){with(this) {
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "vue-color__sketch"
 	  }, [_c('div', {
@@ -4605,19 +4605,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors),
+	      value: (_vm.colors),
 	      expression: "colors"
 	    }],
 	    domProps: {
-	      "value": (colors)
+	      "value": (_vm.colors)
 	    },
 	    on: {
-	      "on-change": childChange,
+	      "on-change": _vm.childChange,
 	      "input": function($event) {
-	        colors = $event
+	        _vm.colors = $event
 	      }
 	    }
-	  })]), _v(" "), _c('div', {
+	  })], 1), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__sketch__controls"
 	  }, [_c('div', {
 	    staticClass: "vue-color__sketch__sliders"
@@ -4627,44 +4627,44 @@ return /******/ (function(modules) { // webpackBootstrap
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors),
+	      value: (_vm.colors),
 	      expression: "colors"
 	    }],
 	    domProps: {
-	      "value": (colors)
+	      "value": (_vm.colors)
 	    },
 	    on: {
-	      "on-change": childChange,
+	      "on-change": _vm.childChange,
 	      "input": function($event) {
-	        colors = $event
+	        _vm.colors = $event
 	      }
 	    }
-	  })]), _v(" "), _c('div', {
+	  })], 1), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__sketch__alpha-wrap"
 	  }, [_c('alpha', {
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors),
+	      value: (_vm.colors),
 	      expression: "colors"
 	    }],
 	    domProps: {
-	      "value": (colors)
+	      "value": (_vm.colors)
 	    },
 	    on: {
-	      "on-change": childChange,
+	      "on-change": _vm.childChange,
 	      "input": function($event) {
-	        colors = $event
+	        _vm.colors = $event
 	      }
 	    }
-	  })])]), _v(" "), _c('div', {
+	  })], 1)]), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__sketch__color-wrap"
 	  }, [_c('div', {
 	    staticClass: "vue-color__sketch__active-color",
 	    style: ({
-	      background: activeColor
+	      background: _vm.activeColor
 	    })
-	  })])]), _v(" "), _c('div', {
+	  })])]), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__sketch__field"
 	  }, [_c('div', {
 	    staticClass: "vue-color__sketch__field--double"
@@ -4672,91 +4672,91 @@ return /******/ (function(modules) { // webpackBootstrap
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors.hex),
+	      value: (_vm.colors.hex),
 	      expression: "colors.hex"
 	    }],
 	    attrs: {
 	      "label": "hex"
 	    },
 	    domProps: {
-	      "value": (colors.hex)
+	      "value": (_vm.colors.hex)
 	    },
 	    on: {
-	      "on-change": inputChange,
+	      "on-change": _vm.inputChange,
 	      "input": function($event) {
-	        colors.hex = $event
+	        _vm.colors.hex = $event
 	      }
 	    }
-	  })]), _v(" "), _c('div', {
+	  })], 1), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__sketch__field--single"
 	  }, [_c('ed-in', {
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors.rgba.r),
+	      value: (_vm.colors.rgba.r),
 	      expression: "colors.rgba.r"
 	    }],
 	    attrs: {
 	      "label": "r"
 	    },
 	    domProps: {
-	      "value": (colors.rgba.r)
+	      "value": (_vm.colors.rgba.r)
 	    },
 	    on: {
-	      "on-change": inputChange,
+	      "on-change": _vm.inputChange,
 	      "input": function($event) {
-	        colors.rgba.r = $event
+	        _vm.colors.rgba.r = $event
 	      }
 	    }
-	  })]), _v(" "), _c('div', {
+	  })], 1), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__sketch__field--single"
 	  }, [_c('ed-in', {
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors.rgba.g),
+	      value: (_vm.colors.rgba.g),
 	      expression: "colors.rgba.g"
 	    }],
 	    attrs: {
 	      "label": "g"
 	    },
 	    domProps: {
-	      "value": (colors.rgba.g)
+	      "value": (_vm.colors.rgba.g)
 	    },
 	    on: {
-	      "on-change": inputChange,
+	      "on-change": _vm.inputChange,
 	      "input": function($event) {
-	        colors.rgba.g = $event
+	        _vm.colors.rgba.g = $event
 	      }
 	    }
-	  })]), _v(" "), _c('div', {
+	  })], 1), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__sketch__field--single"
 	  }, [_c('ed-in', {
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors.rgba.b),
+	      value: (_vm.colors.rgba.b),
 	      expression: "colors.rgba.b"
 	    }],
 	    attrs: {
 	      "label": "b"
 	    },
 	    domProps: {
-	      "value": (colors.rgba.b)
+	      "value": (_vm.colors.rgba.b)
 	    },
 	    on: {
-	      "on-change": inputChange,
+	      "on-change": _vm.inputChange,
 	      "input": function($event) {
-	        colors.rgba.b = $event
+	        _vm.colors.rgba.b = $event
 	      }
 	    }
-	  })]), _v(" "), _c('div', {
+	  })], 1), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__sketch__field--single"
 	  }, [_c('ed-in', {
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors.a),
+	      value: (_vm.colors.a),
 	      expression: "colors.a"
 	    }],
 	    attrs: {
@@ -4765,17 +4765,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	      "max": 1
 	    },
 	    domProps: {
-	      "value": (colors.a)
+	      "value": (_vm.colors.a)
 	    },
 	    on: {
-	      "on-change": inputChange,
+	      "on-change": _vm.inputChange,
 	      "input": function($event) {
-	        colors.a = $event
+	        _vm.colors.a = $event
 	      }
 	    }
-	  })])]), _v(" "), _c('div', {
+	  })], 1)]), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__sketch__presets"
-	  }, _l((presetColors), function(c) {
+	  }, _vm._l((_vm.presetColors), function(c) {
 	    return _c('div', {
 	      staticClass: "vue-color__sketch__presets-color",
 	      style: ({
@@ -4783,16 +4783,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }),
 	      on: {
 	        "click": function($event) {
-	          handlePreset(c)
+	          _vm.handlePreset(c)
 	        }
 	      }
 	    })
 	  }))])
-	}},staticRenderFns: []}
+	},staticRenderFns: []}
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-5", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-7", module.exports)
 	  }
 	}
 
@@ -4831,9 +4831,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-7", __vue_options__)
+	    hotAPI.createRecord("data-v-5", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-7", __vue_options__)
+	    hotAPI.reload("data-v-5", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Chrome.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -4857,8 +4857,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-7!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Chrome.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-7!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Chrome.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-5!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Chrome.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-5!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Chrome.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -4876,7 +4876,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	// module
-	exports.push([module.id, "\n.vue-color__chrome {\n  background: #fff;\n  border-radius: 2px;\n  box-shadow: 0 0 2px rgba(0,0,0,0.3), 0 4px 8px rgba(0,0,0,0.3);\n  box-sizing: initial;\n  width: 225px;\n  font-family: Menlo;\n  background-color: #fff;\n}\n.vue-color__chrome__controls {\n  display: flex;\n}\n.vue-color__chrome__color-wrap {\n  width: 32px;\n}\n.vue-color__chrome__active-color {\n  margin-top: 6px;\n  width: 16px;\n  height: 16px;\n  border-radius: 8px;\n  position: relative;\n  overflow: hidden;\n}\n.vue-color__chrome__sliders {\n  flex: 1;\n}\n.vue-color__chrome__sliders .vue-color__c-hue,\n.vue-color__chrome__sliders .vue-color__c-alpha__gradient {\n  border-radius: 2px;\n}\n.vue-color__chrome__sliders .vue-color__c-alpha__picker,\n.vue-color__chrome__sliders .vue-color__c-hue__picker {\n  width: 12px;\n  height: 12px;\n  border-radius: 6px;\n  transform: translate(-6px, -2px);\n  background-color: #f8f8f8;\n  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);\n}\n.vue-color__chrome__fields-wrap {\n  padding-top: 16px;\n  display: flex;\n}\n.vue-color__chrome__fields {\n  display: flex;\n  margin-left: -6px;\n  flex: 1;\n}\n.vue-color__chrome__field {\n  padding-left: 6px;\n  width: 100%;\n}\n.vue-color__chrome__toggle-btn {\n  width: 32px;\n  text-align: right;\n  position: relative;\n}\n.vue-color__chrome__icon {\n  margin-right: -4px;\n  margin-top: 12px;\n  cursor: pointer;\n  position: relative;\n  z-index: 2;\n}\n.vue-color__chrome__icon-highlight {\n  position: absolute;\n  width: 24px;\n  height: 28px;\n  background: #eee;\n  border-radius: 4px;\n  top: 10px;\n  left: 12px;\n}\n.vue-color__chrome__hue-wrap {\n  position: relative;\n  height: 10px;\n  margin-bottom: 8px;\n}\n.vue-color__chrome__alpha-wrap {\n  position: relative;\n  height: 10px;\n}\n.vue-color__chrome__chrome-body {\n  padding: 16px 16px 12px;\n  background-color: #fff;\n}\n.vue-color__chrome__saturation-wrap {\n  width: 100%;\n  padding-bottom: 55%;\n  position: relative;\n  border-radius: 2px 2px 0 0;\n  overflow: hidden;\n}\n.vue-color__chrome__saturation-wrap .vue-color__saturation--circle {\n  width: 12px;\n  height: 12px;\n}\n.vue-color__chrome__fields .vue-color__editable-input__input {\n  font-size: 11px;\n  color: #333;\n  width: 100%;\n  border-rradius: 2px;\n  border: none;\n  box-shadow: inset 0 0 0 1px #dadada;\n  height: 21px;\n  text-align: center;\n}\n.vue-color__chrome__fields .vue-color__editable-input__label {\n  text-transform: uppercase;\n  font-size: 11px;\n  line-height: 11px;\n  color: #969696;\n  text-align: center;\n  display: block;\n  margin-top: 12px;\n}\n", ""]);
+	exports.push([module.id, "\n.vue-color__chrome {\n  background: #fff;\n  border-radius: 2px;\n  box-shadow: 0 0 2px rgba(0,0,0,0.3), 0 4px 8px rgba(0,0,0,0.3);\n  box-sizing: initial;\n  width: 225px;\n  font-family: Menlo;\n  background-color: #fff;\n}\n.vue-color__chrome__controls {\n  display: flex;\n}\n.vue-color__chrome__color-wrap {\n  width: 32px;\n}\n.vue-color__chrome__active-color {\n  margin-top: 6px;\n  width: 16px;\n  height: 16px;\n  border-radius: 8px;\n  position: relative;\n  overflow: hidden;\n}\n.vue-color__chrome__sliders {\n  flex: 1;\n}\n.vue-color__chrome__sliders .vue-color__c-hue,\n.vue-color__chrome__sliders .vue-color__c-alpha__gradient {\n  border-radius: 2px;\n}\n.vue-color__chrome__sliders .vue-color__c-alpha__picker,\n.vue-color__chrome__sliders .vue-color__c-hue__picker {\n  width: 12px;\n  height: 12px;\n  border-radius: 6px;\n  transform: translate(-6px, -2px);\n  background-color: #f8f8f8;\n  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);\n}\n.vue-color__chrome__fields-wrap {\n  padding-top: 16px;\n  display: flex;\n}\n.vue-color__chrome__fields {\n  display: flex;\n  margin-left: -6px;\n  flex: 1;\n}\n.vue-color__chrome__field {\n  padding-left: 6px;\n  width: 100%;\n}\n.vue-color__chrome__toggle-btn {\n  width: 32px;\n  text-align: right;\n  position: relative;\n}\n.vue-color__chrome__icon {\n  margin-right: -4px;\n  margin-top: 12px;\n  cursor: pointer;\n  position: relative;\n  z-index: 2;\n}\n.vue-color__chrome__icon-highlight {\n  position: absolute;\n  width: 24px;\n  height: 28px;\n  background: #eee;\n  border-radius: 4px;\n  top: 10px;\n  left: 12px;\n}\n.vue-color__chrome__hue-wrap {\n  position: relative;\n  height: 10px;\n  margin-bottom: 8px;\n}\n.vue-color__chrome__alpha-wrap {\n  position: relative;\n  height: 10px;\n}\n.vue-color__chrome__chrome-body {\n  padding: 16px 16px 12px;\n  background-color: #fff;\n}\n.vue-color__chrome__saturation-wrap {\n  width: 100%;\n  padding-bottom: 55%;\n  position: relative;\n  border-radius: 2px 2px 0 0;\n  overflow: hidden;\n}\n.vue-color__chrome__saturation-wrap .vue-color__saturation--circle {\n  width: 12px;\n  height: 12px;\n}\n.vue-color__chrome__fields .vue-color__editable-input__input {\n  font-size: 11px;\n  color: #333;\n  width: 100%;\n  border-rradius: 2px;\n  border: none;\n  box-shadow: inset 0 0 0 1px #dadada;\n  height: 21px;\n  text-align: center;\n}\n.vue-color__chrome__fields .vue-color__editable-input__label {\n  text-transform: uppercase;\n  font-size: 11px;\n  line-height: 11px;\n  color: #969696;\n  text-align: center;\n  display: block;\n  margin-top: 12px;\n}\n.vue-color__chrome__chrome-actionbar {\n  text-align: right;\n}\n.vue-color__chrome__chrome-actionbar button {\n  -webkit-appearance: none;\n  padding: 4px;\n  font-size: 12px;\n  border: 1px solid #bfcbd9;\n  border-radius: 4px;\n  background: #fff;\n  outline: none;\n  cursor: pointer;\n}\n", ""]);
 
 	// exports
 
@@ -4978,6 +4978,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    hideHighlight: function hideHighlight() {
 	      this.highlight = false;
+	    },
+	    onCancel: function onCancel() {
+	      this.$emit('cancel');
+	    },
+	    onOk: function onOk() {
+	      this.$emit('ok');
 	    }
 	  }
 	};
@@ -4986,7 +4992,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){with(this) {
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "vue-color__chrome"
 	  }, [_c('div', {
@@ -4995,19 +5001,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors),
+	      value: (_vm.colors),
 	      expression: "colors"
 	    }],
 	    domProps: {
-	      "value": (colors)
+	      "value": (_vm.colors)
 	    },
 	    on: {
-	      "on-change": childChange,
+	      "on-change": _vm.childChange,
 	      "input": function($event) {
-	        colors = $event
+	        _vm.colors = $event
 	      }
 	    }
-	  })]), _v(" "), _c('div', {
+	  })], 1), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__chrome__chrome-body"
 	  }, [_c('div', {
 	    staticClass: "vue-color__chrome__controls"
@@ -5016,9 +5022,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }, [_c('div', {
 	    staticClass: "vue-color__chrome__active-color",
 	    style: ({
-	      background: activeColor
+	      background: _vm.activeColor
 	    })
-	  })]), _v(" "), _c('div', {
+	  })]), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__chrome__sliders"
 	  }, [_c('div', {
 	    staticClass: "vue-color__chrome__hue-wrap"
@@ -5026,43 +5032,43 @@ return /******/ (function(modules) { // webpackBootstrap
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors),
+	      value: (_vm.colors),
 	      expression: "colors"
 	    }],
 	    domProps: {
-	      "value": (colors)
+	      "value": (_vm.colors)
 	    },
 	    on: {
-	      "on-change": childChange,
+	      "on-change": _vm.childChange,
 	      "input": function($event) {
-	        colors = $event
+	        _vm.colors = $event
 	      }
 	    }
-	  })]), _v(" "), _c('div', {
+	  })], 1), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__chrome__alpha-wrap"
 	  }, [_c('alpha', {
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors),
+	      value: (_vm.colors),
 	      expression: "colors"
 	    }],
 	    domProps: {
-	      "value": (colors)
+	      "value": (_vm.colors)
 	    },
 	    on: {
-	      "on-change": childChange,
+	      "on-change": _vm.childChange,
 	      "input": function($event) {
-	        colors = $event
+	        _vm.colors = $event
 	      }
 	    }
-	  })])])]), _v(" "), _c('div', {
+	  })], 1)])]), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__chrome__fields-wrap"
 	  }, [_c('div', {
 	    directives: [{
 	      name: "show",
 	      rawName: "v-show",
-	      value: (fieldsIndex === 0),
+	      value: (_vm.fieldsIndex === 0),
 	      expression: "fieldsIndex === 0"
 	    }],
 	    staticClass: "vue-color__chrome__fields"
@@ -5072,26 +5078,26 @@ return /******/ (function(modules) { // webpackBootstrap
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors.hex),
+	      value: (_vm.colors.hex),
 	      expression: "colors.hex"
 	    }],
 	    attrs: {
 	      "label": "hex"
 	    },
 	    domProps: {
-	      "value": (colors.hex)
+	      "value": (_vm.colors.hex)
 	    },
 	    on: {
-	      "on-change": inputChange,
+	      "on-change": _vm.inputChange,
 	      "input": function($event) {
-	        colors.hex = $event
+	        _vm.colors.hex = $event
 	      }
 	    }
-	  })])]), _v(" "), _c('div', {
+	  })], 1)]), _vm._v(" "), _c('div', {
 	    directives: [{
 	      name: "show",
 	      rawName: "v-show",
-	      value: (fieldsIndex === 1),
+	      value: (_vm.fieldsIndex === 1),
 	      expression: "fieldsIndex === 1"
 	    }],
 	    staticClass: "vue-color__chrome__fields"
@@ -5101,70 +5107,70 @@ return /******/ (function(modules) { // webpackBootstrap
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors.rgba.r),
+	      value: (_vm.colors.rgba.r),
 	      expression: "colors.rgba.r"
 	    }],
 	    attrs: {
 	      "label": "r"
 	    },
 	    domProps: {
-	      "value": (colors.rgba.r)
+	      "value": (_vm.colors.rgba.r)
 	    },
 	    on: {
-	      "on-change": inputChange,
+	      "on-change": _vm.inputChange,
 	      "input": function($event) {
-	        colors.rgba.r = $event
+	        _vm.colors.rgba.r = $event
 	      }
 	    }
-	  })]), _v(" "), _c('div', {
+	  })], 1), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__chrome__field"
 	  }, [_c('ed-in', {
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors.rgba.g),
+	      value: (_vm.colors.rgba.g),
 	      expression: "colors.rgba.g"
 	    }],
 	    attrs: {
 	      "label": "g"
 	    },
 	    domProps: {
-	      "value": (colors.rgba.g)
+	      "value": (_vm.colors.rgba.g)
 	    },
 	    on: {
-	      "on-change": inputChange,
+	      "on-change": _vm.inputChange,
 	      "input": function($event) {
-	        colors.rgba.g = $event
+	        _vm.colors.rgba.g = $event
 	      }
 	    }
-	  })]), _v(" "), _c('div', {
+	  })], 1), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__chrome__field"
 	  }, [_c('ed-in', {
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors.rgba.b),
+	      value: (_vm.colors.rgba.b),
 	      expression: "colors.rgba.b"
 	    }],
 	    attrs: {
 	      "label": "b"
 	    },
 	    domProps: {
-	      "value": (colors.rgba.b)
+	      "value": (_vm.colors.rgba.b)
 	    },
 	    on: {
-	      "on-change": inputChange,
+	      "on-change": _vm.inputChange,
 	      "input": function($event) {
-	        colors.rgba.b = $event
+	        _vm.colors.rgba.b = $event
 	      }
 	    }
-	  })]), _v(" "), _c('div', {
+	  })], 1), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__chrome__field"
 	  }, [_c('ed-in', {
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors.a),
+	      value: (_vm.colors.a),
 	      expression: "colors.a"
 	    }],
 	    attrs: {
@@ -5173,19 +5179,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	      "max": 1
 	    },
 	    domProps: {
-	      "value": (colors.a)
+	      "value": (_vm.colors.a)
 	    },
 	    on: {
-	      "on-change": inputChange,
+	      "on-change": _vm.inputChange,
 	      "input": function($event) {
-	        colors.a = $event
+	        _vm.colors.a = $event
 	      }
 	    }
-	  })])]), _v(" "), _c('div', {
+	  })], 1)]), _vm._v(" "), _c('div', {
 	    directives: [{
 	      name: "show",
 	      rawName: "v-show",
-	      value: (fieldsIndex === 2),
+	      value: (_vm.fieldsIndex === 2),
 	      expression: "fieldsIndex === 2"
 	    }],
 	    staticClass: "vue-color__chrome__fields"
@@ -5195,70 +5201,70 @@ return /******/ (function(modules) { // webpackBootstrap
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors.hsl.h),
+	      value: (_vm.colors.hsl.h),
 	      expression: "colors.hsl.h"
 	    }],
 	    attrs: {
 	      "label": "h"
 	    },
 	    domProps: {
-	      "value": (colors.hsl.h)
+	      "value": (_vm.colors.hsl.h)
 	    },
 	    on: {
-	      "on-change": inputChange,
+	      "on-change": _vm.inputChange,
 	      "input": function($event) {
-	        colors.hsl.h = $event
+	        _vm.colors.hsl.h = $event
 	      }
 	    }
-	  })]), _v(" "), _c('div', {
+	  })], 1), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__chrome__field"
 	  }, [_c('ed-in', {
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors.hsl.s),
+	      value: (_vm.colors.hsl.s),
 	      expression: "colors.hsl.s"
 	    }],
 	    attrs: {
 	      "label": "s"
 	    },
 	    domProps: {
-	      "value": (colors.hsl.s)
+	      "value": (_vm.colors.hsl.s)
 	    },
 	    on: {
-	      "on-change": inputChange,
+	      "on-change": _vm.inputChange,
 	      "input": function($event) {
-	        colors.hsl.s = $event
+	        _vm.colors.hsl.s = $event
 	      }
 	    }
-	  })]), _v(" "), _c('div', {
+	  })], 1), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__chrome__field"
 	  }, [_c('ed-in', {
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors.hsl.l),
+	      value: (_vm.colors.hsl.l),
 	      expression: "colors.hsl.l"
 	    }],
 	    attrs: {
 	      "label": "l"
 	    },
 	    domProps: {
-	      "value": (colors.hsl.l)
+	      "value": (_vm.colors.hsl.l)
 	    },
 	    on: {
-	      "on-change": inputChange,
+	      "on-change": _vm.inputChange,
 	      "input": function($event) {
-	        colors.hsl.l = $event
+	        _vm.colors.hsl.l = $event
 	      }
 	    }
-	  })]), _v(" "), _c('div', {
+	  })], 1), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__chrome__field"
 	  }, [_c('ed-in', {
 	    directives: [{
 	      name: "model",
 	      rawName: "v-model",
-	      value: (colors.a),
+	      value: (_vm.colors.a),
 	      expression: "colors.a"
 	    }],
 	    attrs: {
@@ -5267,18 +5273,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	      "max": 1
 	    },
 	    domProps: {
-	      "value": (colors.a)
+	      "value": (_vm.colors.a)
 	    },
 	    on: {
-	      "on-change": inputChange,
+	      "on-change": _vm.inputChange,
 	      "input": function($event) {
-	        colors.a = $event
+	        _vm.colors.a = $event
 	      }
 	    }
-	  })])]), _v(" "), _v(" "), _c('div', {
+	  })], 1)]), _vm._v(" "), _c('div', {
 	    staticClass: "vue-color__chrome__toggle-btn",
 	    on: {
-	      "click": toggleViews
+	      "click": _vm.toggleViews
 	    }
 	  }, [_c('div', {
 	    staticClass: "vue-color__chrome__icon"
@@ -5291,29 +5297,39 @@ return /******/ (function(modules) { // webpackBootstrap
 	      "viewBox": "0 0 24 24"
 	    },
 	    on: {
-	      "mouseover": showHighlight,
-	      "mouseenter": showHighlight,
-	      "mouseout": hideHighlight
+	      "mouseover": _vm.showHighlight,
+	      "mouseenter": _vm.showHighlight,
+	      "mouseout": _vm.hideHighlight
 	    }
 	  }, [_c('path', {
 	    attrs: {
 	      "fill": "#333",
 	      "d": "M12,18.17L8.83,15L7.42,16.41L12,21L16.59,16.41L15.17,15M12,5.83L15.17,9L16.58,7.59L12,3L7.41,7.59L8.83,9L12,5.83Z"
 	    }
-	  })])]), _v(" "), _c('div', {
+	  })])]), _vm._v(" "), _c('div', {
 	    directives: [{
 	      name: "show",
 	      rawName: "v-show",
-	      value: (highlight),
+	      value: (_vm.highlight),
 	      expression: "highlight"
 	    }],
 	    staticClass: "vue-color__chrome__icon-highlight"
-	  })]), _v(" ")])])])
-	}},staticRenderFns: []}
+	  })])]), _vm._v(" "), _c('div', {
+	    staticClass: "vue-color__chrome__chrome-actionbar"
+	  }, [_c('button', {
+	    on: {
+	      "click": _vm.onCancel
+	    }
+	  }, [_vm._v("取消")]), _vm._v(" "), _c('button', {
+	    on: {
+	      "click": _vm.onOk
+	    }
+	  }, [_vm._v("确定")])])])])
+	},staticRenderFns: []}
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-7", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-5", module.exports)
 	  }
 	}
 
